@@ -74,6 +74,7 @@ section {
     align-items: center;
     column-gap: 21px;
     margin-top: 16px;
+    letter-spacing: 0.72px;
 }
 
 .header {
@@ -94,6 +95,7 @@ section {
 
 .hero {
     border-bottom-left-radius: 290px;
+    background-color: #CDA274;
     background-image: url('./images/background.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -210,6 +212,7 @@ section {
 .feedbacks__card-address {
     font-size: 18px;
     line-height: 27px;
+    color: var(--main-text-color);
 }
 .feedbacks__card-text {
     color: var(--main-text-color);
@@ -295,6 +298,7 @@ section {
     letter-spacing: 1.7px;
     line-height: 127px;
     margin-bottom: 10px;
+    font-weight: 400;
 }
 .stats__stat-card {
     border-right: 1px solid var(--gold-text-color);
@@ -370,7 +374,6 @@ section {
 
 .join-us {
     margin-top: 100px;
-
 }
 .join-us__wrapper {
     background-color: var(--dark-grey-color);
@@ -384,7 +387,7 @@ section {
     background-color: var(--gold-text-color);
 }
 .button--gold img {
-    filter: invert(1);
+    filter: grayscale(100%) brightness(30%);
 }
 .join-us .section-text {
     color: inherit;
@@ -409,12 +412,22 @@ section {
     line-height: 33px;
     color: var(--main-text-color);
 }
+.footer__link:hover {
+    color:#CDA274;
+}
 .footer__socials {
     display: flex;
     align-items: center;
     column-gap: 40px;
     padding: 20px 0 16px 0;
     margin-top: 10px;
+}
+.footer__socials-button {
+    padding: 10px;
+    border-radius: 5px;
+}
+.footer__socials-button:hover {
+    background-color: var(--gold-text-color);
 }
 .footer__slogan {
     margin-top: 15px;
@@ -436,6 +449,6 @@ section {
     padding: 35px 0;
     border-top: 1px solid #bfbfbf;
 }
-.right span {
+.right a {
     color: var(--gold-text-color);
 }
