@@ -177,7 +177,6 @@ section {
 
 .feedbacks {
     margin-top: 140px;
-    
 }
 .feedbacks__wrapper {
     width: 100%;
@@ -411,6 +410,7 @@ section {
     font-size: 22px;
     line-height: 33px;
     color: var(--main-text-color);
+    transition: all 0.2s;
 }
 .footer__link:hover {
     color:#CDA274;
@@ -425,7 +425,14 @@ section {
 .footer__socials-button {
     padding: 10px;
     border-radius: 5px;
+    width: 39px;
+    height: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
 }
+
 .footer__socials-button:hover {
     background-color: var(--gold-text-color);
 }
